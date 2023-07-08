@@ -12,6 +12,7 @@ public class Coin : MonoBehaviour
     private int currentMaterial = 0;
 
     private void Start() {
+        Screen.orientation = ScreenOrientation.Portrait;
         render = GetComponent<Renderer>();
         render.material = materials[currentMaterial];
     }
